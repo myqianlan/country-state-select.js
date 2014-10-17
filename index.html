@@ -7,7 +7,7 @@
     <meta name="description" content="Country-state-select.js : Free JavaScript Country/State Select pluin">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+    <script src="javascripts/country-state-select.js"></script>
     <title>Country-state-select.js</title>
   </head>
 
@@ -55,9 +55,31 @@ Select Country (without states):
 
 </pre></div>
 
-<h3>
+    <style>
+      select,label{
+        display: inline-block;
+        width: 200px;
+        height: 30px;
+      }
+    </style>
+         <h3>Demo</h3>
+        <hr/>
+        <br/><label for="country">Select Country (with states):</label>
+        <select id="country" name="country"></select>
+        <br /><label for="state">State:</label>
+        <select name="state" id="state"></select>
+        <br/>
+        <br /><label for="state">Select Country (without states):</label>
+        <select id="country2" name="country2"></select>
+        <br />
+        <script language="javascript">
+            populateCountries("country", "state");
+            populateCountries("country2");
+        </script>
+        <h3>
 <a name="mit-license" class="anchor" href="#mit-license"><span class="octicon octicon-link"></span></a>MIT License</h3>
       </section>
+
     </div>
 
     <!-- FOOTER  -->
