@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Country-state-select.js : Free JavaScript Country/State Select pluin">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content="Country-state-select.js : Free JavaScript Country/State Select pluin">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <script src="javascripts/country-state-select.js"></script>
-    <title>Country-state-select.js</title>
-  </head>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <script src="javascripts/country-state-select.js"></script>
+  <title>Country-state-select.js</title>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/myqianlan/country-state-select.js">View on GitHub</a>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <a id="forkme_banner" href="https://github.com/myqianlan/country-state-select.js">View on GitHub</a>
 
-          <h1 id="project_title">Country-state-select.js</h1>
-          <h2 id="project_tagline">Free JavaScript Country/State Select pluin</h2>
+      <h1 id="project_title">Country-state-select.js</h1>
+      <h2 id="project_tagline">Free JavaScript Country/State Select pluin</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/myqianlan/country-state-select.js/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/myqianlan/country-state-select.js/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+      <section id="downloads">
+        <a class="zip_download_link" href="https://github.com/myqianlan/country-state-select.js/zipball/master">Download this project as a .zip file</a>
+        <a class="tar_download_link" href="https://github.com/myqianlan/country-state-select.js/tarball/master">Download this project as a tar.gz file</a>
+      </section>
+    </header>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="countrystate-selectjs" class="anchor" href="#countrystate-selectjs"><span class="octicon octicon-link"></span></a>CountryState-Select.js</h1>
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h1>
+        <a name="countrystate-selectjs" class="anchor" href="#countrystate-selectjs">
+          <span class="octicon octicon-link"></span>
+        </a>
+        CountryState-Select.js
+      </h1>
 
-<p>Free JavaScript Country/State Select pluin</p>
+      <p>Free JavaScript Country/State Select pluin</p>
 
-<h3>
-<a name="use" class="anchor" href="#use"><span class="octicon octicon-link"></span></a>use</h3>
+      <h3>
+        <a name="use" class="anchor" href="#use">
+          <span class="octicon octicon-link"></span>
+        </a>
+        use
+      </h3>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"country-state-select.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+      <div class="highlight highlight-html">
+        <pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"country-state-select.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 Select Country (with states):
 <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"country"</span><span class="nt">&gt;&lt;/select&gt;</span>
 State:
@@ -53,44 +62,61 @@ Select Country (without states):
 <span class="nt">&lt;/script&gt;</span>
 
 
-</pre></div>
+</pre>
+      </div>
 
-    <style>
+      <style>
       select,label{
         display: inline-block;
         width: 200px;
         height: 30px;
       }
     </style>
-         <h3>Demo</h3>
-        <hr/>
-        <br/><label for="country">Select Country (with states):</label>
-        <select id="country" name="country"></select>
-        <br /><label for="state">State:</label>
-        <select name="state" id="state"></select>
-        <br/>
-        <br /><label for="state">Select Country (without states):</label>
-        <select id="country2" name="country2"></select>
-        <br />
-        <script language="javascript">
+      <h3>Demo</h3>
+      <hr/>
+      <br/>
+      <label for="country">Select Country (with states):</label>
+      <select id="country" name="country"></select>
+      <br />
+      <label for="state">State:</label>
+      <select name="state" id="state"></select>
+      <br/>
+      <br />
+      <label for="state">Select Country (without states):</label>
+      <select id="country2" name="country2"></select>
+      <br />
+      <script language="javascript">
             populateCountries("country", "state");
             populateCountries("country2");
         </script>
-        <h3>
-<a name="mit-license" class="anchor" href="#mit-license"><span class="octicon octicon-link"></span></a>MIT License</h3>
-      </section>
+      <h3>
+        <a name="mit-license" class="anchor" href="#mit-license">
+          <span class="octicon octicon-link"></span>
+        </a>
+        MIT License
+      </h3>
+    </section>
 
-    </div>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Country-state-select.js maintained by <a href="https://github.com/myqianlan">myqianlan</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      <p class="copyright">
+        Country-state-select.js maintained by
+        <a href="https://github.com/myqianlan">myqianlan</a>
+      </p>
+      <p>
+        Published with
+        <a href="http://pages.github.com">GitHub Pages</a>
+      </p>
+    </footer>
+  </div>
 
-    
+  <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F81f142e48b1069a574d535ee98246ec4' type='text/javascript'%3E%3C/script%3E"));
+</script>
 
-  </body>
+</body>
 </html>
