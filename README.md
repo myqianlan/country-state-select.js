@@ -1,8 +1,8 @@
 CountryState-Select.js
 ===================
 
-Free JavaScript Country/State Select pluin
-
+Free JavaScript Country/State Select pluin,this is the simple
+[DEMO](http://www.myqianlan.com/country-state-select.js/)
 
 ### use
 
