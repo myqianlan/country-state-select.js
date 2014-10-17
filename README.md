@@ -15,17 +15,13 @@ State:
 <br/>
 Select Country (without states):
 <select id="country2" name="country2"></select>
-
-        
-```
-
-```js
 <script language="javascript">
             populateCountries("country", "state");
             populateCountries("country2");
 </script>
-```
 
+        
+```
 ### MIT License
 
 
