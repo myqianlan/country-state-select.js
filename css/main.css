@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#wipe-area{
+  width: 100%;
+  height: 80%;
+}
+#canvas{
+  width: 100%;
+  height: 100%;
+}
+#text-area{
+  width: 100%;
+  height: 10%;
+}
+#text-area input{
+  height: 100%;
+  width: 100%;
+  text-indent: 1em;
+  z-index: 200;
+
+}
+
+#tips{
+  height: 10%;
+  position: relative;
+}
+#process{
+  height: 102%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f55066;
+  display: table;
+  text-align: left;
+}
+
+#process span{
+  padding-left: 20px;
+   display: table-cell;
+   vertical-align: middle;
+}
+#process i{
+  display: inline-block;
+   font-style: normal;
+   width: 48px;
+   text-align: center;
+}
+
+
+
+      
+      /* Artifical "border" to clear border to bypass mask */
+      .border{
+        padding: 5px;
+      }
+
+      .border,
+      .border.start
+      {
+        background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+        background-position: 0 0, 0 0, 0 0, 0 0;
+        /* Blue-ish Green Fallback for Mozilla */
+        background-image: -moz-linear-gradient(left, #09BA5E 0%, #00C7CE 15%, #3472CF 26%, #00C7CE 48%, #0CCF91 91%, #09BA5E 100%);
+        /* Add "Highlight" Texture to the Animation */
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(0,0,0,.3)), color-stop(23%,rgba(0,0,0,.1)), color-stop(40%,rgba(255,231,87,.1)), color-stop(61%,rgba(255,231,87,.2)), color-stop(70%,rgba(255,231,87,.1)), color-stop(80%,rgba(0,0,0,.1)), color-stop(100%,rgba(0,0,0,.25)));
+        /* Starting Color */
+        background-color: #39f;
+        /* Just do something for IE-suck */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BA1B', endColorstr='#00BA1B',GradientType=1 );
+      }
+      
+      
+      
+      /* Keyfram-licious animation */
+      @-webkit-keyframes colors {
+          0% {background-color: #39f;}
+          15% {background-color: #F246C9;}
+          30% {background-color: #4453F2;}
+          45% {background-color: #44F262;}
+          60% {background-color: #F257D4;}
+          75% {background-color: #EDF255;}
+          90% {background-color: #F20006;}
+          100% {background-color: #39f;}
+        }
+        .border{
+          -webkit-animation-direction: normal;
+          -webkit-animation-duration: 20s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-name: colors;
+          -webkit-animation-timing-function: ease;
+        }
