@@ -65,8 +65,7 @@ html,body{
         padding: 5px;
       }
 
-      .border,
-      .border.start
+      .border
       {
         background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
         background-position: 0 0, 0 0, 0 0, 0 0;
